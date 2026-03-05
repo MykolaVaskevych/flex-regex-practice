@@ -1,7 +1,7 @@
 all: jibuc_parser
 
 jibuc_parser: jibuc.tab.c lex.yy.c
-	gcc -o jibuc_parser jibuc.tab.c lex.yy.c -lfl
+	gcc -o jibuc_parser jibuc.tab.c lex.yy.c
 
 jibuc.tab.c jibuc.tab.h: jibuc.y
 	bison -d jibuc.y
